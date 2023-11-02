@@ -1,0 +1,156 @@
+class Evil
+{
+public static void main(String args[])
+{
+ int num=9,temp=num,sum=0,result=0;
+ double square=Math.pow(num,2);
+ System.out.println(square);
+ result=(int)Math.sqrt(square);
+ for(;result!=0;result/=10)
+{
+ int rem=result%10;
+ sum+=rem;
+}
+System.out.println(sum);
+if(sum==num)
+System.out.println("Evil Number");
+else
+System.out.println("Not an Evil number");
+
+}
+}
+
+
+_______________________________________________________________________________________
+
+
+class Power
+{
+ public static void main(String args[])
+ { 
+  int num=132,sum=0,rem=0,temp=num,product=1;
+  for(;num!=0;num/=10)
+  {
+   rem=num%10;
+   sum+=rem;
+   product*=rem;
+  }
+  /*System.out.println(sum);
+  System.out.println(product)*/
+if(sum==product)
+ System.out.println(temp+" is a power number");
+  
+}
+}
+
+_________________________________________________________________________________________________
+
+
+
+class Automatic
+{
+ public static void main(String args[])
+ { 
+   int num=76,temp=num,square=0,rem=0,rev=0;
+   square=num*num;
+   System.out.println("Square value of "+num+ "is "+square);
+ rem=square%10;
+   if(rem==num)
+   System.out.println("Alien Number");
+
+}
+}
+
+_________________________________________________________________________________________________________________
+
+ class Alien
+{
+ public static void main(String args[])
+ {
+  int num=14,temp=num,square=0,rem=0,rev=0,product=0,rev1=0;
+   square=num*num;
+    System.out.println(num);
+   System.out.println(square);
+   for(;num!=0;num/=10)
+   {
+    rem=num%10;
+    rev=rev*10+rem;
+   }
+  product=rev*rev;
+  System.out.println(product);
+  System.out.println(rev);
+  for(;product!=0;product/=10)
+  {
+   int  rem1=product%10;
+    rev1=rev1*10+rem1;
+  }
+System.out.println(rev1);
+ if( square==rev1)
+  System.out.print(temp+" is an alien number");  
+else
+ System.out.print(temp+" is not an alien number");
+}
+}
+   _______________________________________________________________________________________________________________________________
+
+
+
+class Armstrong
+{
+ public static void main(String args[])
+{
+ int num=371,temp=num,count=0,result=0,rem=0;
+ for(;num!=0;num/=10)
+ count++;
+ num=temp;
+ for(;num!=0;num/=10)
+ {
+  rem=num%10;
+  result=result+(int)Math.pow(rem,count);
+ }
+if(temp==result)
+System.out.println("Armstrong Number");
+else
+System.out.println("Not an Armstrong Number");
+}
+}
+
+____________________________________________________________________________________________________________________________________________________
+
+class Palindrome
+{ 
+ public static void main(String args[])
+ {
+  int num=141,temp=num,square=0,rem=0,rev=0,product=0,rev1=0;
+   for(;num!=0;num/=10)
+   {
+    rem=num%10;
+    rev=rev*10+rem;
+   }
+  System.out.println(temp==rev?"Palindrome":"Not a palindrome");
+}
+}
+ ___________________________________________________________________________________________________________________________________________________________
+
+
+class PrimeOneToTen
+{
+ public static void main(String args[])
+ {
+  for(int x=1;x<=10;x++)
+  {
+   int start=2,count=0;
+   for(;start<x;start++)
+   {
+    if(x%start==0)
+    {
+     count++;
+     break;
+    }
+   }
+  if(count==0&&x!=1)
+   System.out.println(x);
+ }
+}
+}
+    _____________________________________________________________________________________________________________________________________________________________________
